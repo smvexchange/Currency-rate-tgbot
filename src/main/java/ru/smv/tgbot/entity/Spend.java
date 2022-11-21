@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "SPEND")
+@Table(name = "spend")
 @Data
 public class Spend {
 
@@ -14,9 +14,9 @@ public class Spend {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "CHAT_ID")
+    @Column(name = "chat_id")
     private Long chatId;
 
-    @Column(name = "SPEND")
+    @Column(name = "spend")
     private BigDecimal spend;
 }
